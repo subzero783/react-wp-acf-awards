@@ -1,0 +1,534 @@
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    > div[class*="col-"] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+.col {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+#awards-app {
+    h1,
+    h2,
+    h3,
+    h4 {
+        padding: 0;
+        margin: 0 !important;
+    }
+
+    .winner-section {
+        padding-top: 81px;
+        padding-bottom: 180px;
+
+        @media screen and (max-width: 767px) {
+            padding-bottom: 64px;
+        }
+
+        .container {
+            @media screen and (max-width: 767px) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .row {
+                display: flex;
+                flex-flow: row wrap;
+                align-items: flex-start;
+
+                .col {
+                    &:nth-of-type(1) {
+                        .orange-separator {
+                            margin-top: 0;
+                            margin-bottom: 24px;
+                        }
+
+                        @media screen and (max-width: 767px) {
+                            margin-bottom: 40px;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        .image {
+                            svg {
+                                display: block;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .recent-awards-section {
+        padding-top: 56px;
+        padding-bottom: 50px;
+        background-color: #fafafa;
+
+        @media screen and (max-width: 767px) {
+            padding-top: 30px;
+            padding-bottom: 79px;
+        }
+
+        .container {
+            @media screen and (max-width: 767px) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .row {
+                .col {
+                    &:nth-of-type(1) {
+                        margin-bottom: 42px;
+
+                        @media screen and (max-width: 767px) {
+                            margin-bottom: 22px;
+                        }
+
+                        .title {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .awards {
+                display: flex;
+                flex-flow: row wrap;
+                list-style-type: none;
+                margin-left: 0;
+                padding-left: 0;
+                margin-bottom: 0;
+
+                @media screen and (max-width: 991px) {
+                    flex-flow: column nowrap;
+
+                    > li {
+                        width: 100% !important;
+                    }
+                    .award-container {
+                        padding-left: 15px !important;
+                        padding-right: 15px !important;
+                    }
+                }
+
+                .award-container {
+                    width: 47%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    padding: 0;
+                    padding-right: 10px;
+                    padding-left: 16px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    background: #ffffff;
+                    box-shadow: 0px 2px 8px #96a4b7;
+                    margin-bottom: 24px;
+
+                    @media screen and (max-width: 767px) {
+                        flex-flow: column nowrap;
+                        max-height: unset;
+                        align-items: center;
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .image {
+                        width: 25%;
+                        margin-right: 24px;
+
+                        @media screen and (max-width: 767px) {
+                            margin-right: 0;
+                            width: 100%;
+                        }
+                    }
+
+                    .text {
+                        width: 75%;
+
+                        @media screen and (max-width: 767px) {
+                            width: 100%;
+                        }
+
+                        h3 {
+                            margin-bottom: 24px !important;
+
+                            @media screen and (max-width: 767px) {
+                                text-align: center;
+                                margin-top: 32px !important;
+                            }
+                        }
+
+                        ul {
+                            list-style-type: disc !important;
+                            margin-left: 0;
+                            padding-left: 0;
+
+                            li {
+                                margin-left: 1.5em !important;
+                            }
+                        }
+
+                        p {
+                            margin: 22px 0 5px 0;
+
+                            i {
+                                font-weight: 400;
+                                font-size: 11px;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(odd) {
+                        margin-right: 29px;
+
+                        @media screen and (max-width: 991px) {
+                            margin-right: 0;
+                        }
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        .image {
+                            padding-bottom: 0 !important;
+                        }
+                    }
+
+                    &.nerdwallet-best-of-awards-2022-2 {
+                        .text {
+                            h3 {
+                                margin-bottom: 10px !important;
+                                @media screen and (max-width: 991px) {
+                                    margin-bottom: 24px !important;
+                                }
+                            }
+                            p {
+                                margin-top: 10px !important;
+                            }
+                            .image {
+                                max-width: 123px !important;
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+
+                    &.best-of-awards {
+                        .image {
+                            max-width: 110px;
+                            padding-bottom: 24px;
+                            padding-top: 24px;
+                        }
+
+                        @media screen and (max-width: 767px) {
+                            padding-bottom: 22px;
+                        }
+                    }
+
+                    &.best-student-loan-lenders {
+                        .image {
+                            max-width: 142px;
+                            @media screen and (max-width: 991px) {
+                                padding-top: 18px;
+                                padding-bottom: 38px;
+                            }
+                        }
+
+                        @media screen and (max-width: 767px) {
+                            padding-bottom: 58px;
+                        }
+                    }
+
+                    &.badcredit {
+                        .image {
+                            padding-top: 32px;
+                            padding-bottom: 32px;
+                            max-width: 132px;
+                        }
+                        @media screen and (max-width: 767px) {
+                            padding-bottom: 60px;
+                        }
+                    }
+
+                    &.forbes-advisor {
+                        .image {
+                            max-width: 135px;
+                        }
+                        @media screen and (max-width: 767px) {
+                            padding-bottom: 46px;
+                        }
+                    }
+
+                    &.best-moneys {
+                        .image {
+                            padding-top: 34px;
+                            padding-bottom: 33px;
+                            max-width: 122px;
+                        }
+                        @media screen and (max-width: 767px) {
+                            padding-bottom: 49px;
+                        }
+                    }
+
+                    &.american-banker {
+                        .image {
+                            padding-top: 61px;
+                            padding-bottom: 68px;
+                            max-width: 148px;
+                        }
+                        @media screen and (max-width: 767px) {
+                            padding-bottom: 85px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .past-awards {
+        padding-top: 180px;
+        padding-bottom: 180px;
+
+        @media screen and (max-width: 767px) {
+            padding-top: 81px;
+            padding-bottom: 80px;
+        }
+
+        .container {
+            @media screen and (max-width: 767px) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .row.awards-title {
+                .col {
+                    margin-bottom: 46px;
+                    @media screen and (max-width: 767px) {
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+
+            .awards {
+                list-style-type: none;
+                margin-left: 0;
+                padding-left: 0;
+
+                .award-container {
+                    margin-bottom: 40px;
+
+                    .multiple-awards {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        flex: 1 1 0;
+                        list-style-type: none;
+                        margin-left: 0;
+                        padding-left: 0;
+
+                        > .box {
+                            width: 100%;
+                            margin-right: 24px;
+                            background: #ffffff;
+                            box-shadow: 0px 2px 8px #96a4b7;
+                            padding: 25px 36.5px 24px 12px;
+                            border-radius: 5px;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            align-items: center;
+
+                            > .award-trophy {
+                                max-width: 29px;
+                                margin-right: 16px;
+                            }
+
+                            > .box-text {
+                                margin-bottom: 0;
+                            }
+
+                            &:last-of-type {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+
+                    .dropdowns {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        align-items: flex-start;
+
+                        .dropdown-container {
+                            display: flex;
+                            flex-flow: column nowrap;
+                            background: #ffffff;
+                            box-shadow: 0px 2px 8px #96a4b7;
+                            border-radius: 5px;
+                            margin-right: 24px;
+                            justify-content: center;
+                            padding: 25px 36.5px 13px 12px;
+
+                            &:nth-of-type(1),
+                            &:nth-of-type(2) {
+                                width: 27.6%;
+                            }
+
+                            &:nth-of-type(3) {
+                                width: 44.8%;
+                                margin-right: 0;
+                            }
+
+                            > .award-dropdown-information {
+                                display: flex;
+                                flex-flow: row nowrap;
+                                align-items: center;
+                                z-index: 1;
+
+                                > .award-trophy {
+                                    width: 25%;
+                                    max-width: 29px;
+                                    margin-right: 16px;
+                                }
+
+                                > .dropdown-title {
+                                    width: 100%;
+                                }
+
+                                > .dropdown-arrow {
+                                    width: 25%;
+                                    max-width: 23px;
+                                    padding: 5px;
+                                    transition: transform 0.3s ease-in-out;
+
+                                    &:hover,
+                                    &:active,
+                                    &:focus {
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                &.open {
+                                    > .dropdown-arrow {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                            }
+
+                            > .dropdown {
+                                max-height: 0;
+                                opacity: 0;
+                                transition: max-height 0.5s ease-in-out, opacity 0.4s;
+                                list-style-type: disc !important;
+                                margin-left: 1.5em !important;
+                                padding-top: 10px;
+
+                                > li {
+                                    padding-bottom: 8px;
+
+                                    &:last-of-type {
+                                        padding-bottom: 0;
+                                    }
+                                }
+
+                                &.open {
+                                    max-height: 500px;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        .multiple-awards,
+                        .dropdowns {
+                            flex-flow: column nowrap;
+
+                            > .dropdown-container,
+                            > .box {
+                                margin-bottom: 16px;
+                                width: 100% !important;
+                                max-width: unset !important;
+
+                                &:last-of-type {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    > h3 {
+                        margin-bottom: 23px !important;
+
+                        @media screen and (max-width: 767px) {
+                            margin-bottom: 26px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ascent-press-releases {
+    background: #fafafa;
+    overflow: hidden;
+
+    .ag-title-2 {
+        margin-top: 48px;
+        margin-bottom: 25px;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 32px;
+        }
+    }
+
+    .aglrrml {
+        position: relative;
+        bottom: 28px;
+
+        &.agrolo {
+            text-align: left;
+            max-width: 200px;
+            margin-top: -65px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+
+            .bfh-item {
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    font-family: FontAwesome;
+                    font-size: 14px;
+                    font-weight: 800;
+                    right: 0;
+                    position: relative;
+                    margin-left: 8px;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    .container {
+        @media screen and (max-width: 767px) {
+            padding-left: 16px !important;
+        }
+
+        .row {
+            .ag-blog-carousel-1 .slick-dots {
+                bottom: -35px;
+            }
+
+            .ag-blog-carousel-1 {
+                margin: 0 0 111px !important;
+            }
+        }
+    }
+}
